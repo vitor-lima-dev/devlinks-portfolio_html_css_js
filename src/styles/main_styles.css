@@ -1,0 +1,209 @@
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100dvh;
+  background: var(--bg-page-gradient), var(--bg-page);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* background-position: center;
+  background-clip: border-box; */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+html,
+body {
+  object-fit: cover;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: transparent;
+
+  /* --- FONT-FAMILY AND PAGE ELEMENTS COLOR */
+  font-family: var(--main-page-font);
+  color: var(--main-page-color);
+
+  transition:
+    background 0.3s ease,
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease;
+}
+
+#page__container {
+  width: 100%;
+  max-width: 400px;
+  min-width: 300px;
+  text-align: center;
+  padding: 56px 0 0;
+}
+
+/* --- HEADER --- */
+
+/* PROFILE */
+
+header > * {
+  text-align: center;
+  padding: 0 24px;
+}
+
+header #header__profile {
+  padding: 5px 24px 0;
+}
+
+header #header__profile img {
+  width: 120px;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  transition: opacity 0.3s ease;
+}
+
+header #header__profile p {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* THEME SWITCH */
+
+header #header__toggle {
+  line-height: 0;
+  padding: 24px 0;
+}
+
+header #header__toggle .toggle-theme {
+  display: inline-block;
+  align-content: center;
+  width: 67px;
+  height: 36px;
+  padding: 0 3px;
+  border-radius: 999px;
+  background: var(--bg-switch-color);
+  border: 1px solid var(--stroke-switch-color);
+  cursor: pointer;
+}
+
+header #header__toggle .toggle-theme .slider {
+  display: block;
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 3px inset rgba(0, 0, 0, 0.514);
+  background: white var(--bg-switch-icon) no-repeat center;
+  transition: margin-left 0.3s ease;
+  border: 2px solid var(--stroke-switch-color);
+}
+
+header #header__toggle .toggle-theme #toggle {
+  display: none;
+}
+
+input:checked + .slider {
+  margin-left: 29px;
+}
+
+/* --- LINKS --- */
+
+/* NAVIGATION LINKS */
+
+main > * {
+  padding: 0 24px;
+  text-align: center;
+}
+
+main #main__nav-links {
+  padding: 24px;
+}
+
+main #main__nav-links a {
+  display: block;
+  font-weight: 500;
+  padding: 16px 24px;
+  border-radius: 5px;
+  text-wrap: nowrap;
+  border: 1.8px solid transparent;
+  background: var(--bg-links-color);
+}
+
+main #main__nav-links ul li:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+
+/* HOVER EFFECTS */
+
+main #main__nav-links a:hover {
+  border-color: var(--stroke-links-color);
+}
+
+/* SOCIAL LINKS */
+
+main #main__social-links {
+  padding: 24px 14px;
+}
+
+main #main__social-links a {
+  display: inline-block;
+  align-content: center;
+  line-height: 0;
+  padding: 16px;
+  border-radius: 50%;
+  font-size: 24px;
+
+  background-color: var(--bg-social-color);
+  border: 1.5px solid var(--stroke-social-color);
+}
+
+main #main__social-links a:not(:first-child) {
+  margin-left: 5px;
+}
+
+/* HOVER EFFECTS */
+
+main #main__social-links a:nth-child(1):hover > * {
+  color: #2e68af;
+}
+
+main #main__social-links a:nth-child(2):hover > * {
+  color: #c13584;
+}
+
+main #main__social-links a:nth-child(3):hover > * {
+  color: #cc0000;
+}
+
+main #main__social-links a:nth-child(4):hover > * {
+  color: #0a66c2;
+}
+
+/* --- FOOTER --- */
+
+footer > * {
+  text-align: center;
+  padding: 0 24px;
+}
+
+main #main__footer {
+  padding: 24px 0;
+  font-size: 14px;
+}
+
+main #main__footer * {
+  color: var(--footer-text);
+  font-weight: 500;
+}
+
+main #main__footer a:first-of-type {
+  text-decoration: underline;
+}
+
+main #main__footer a:first-of-type:hover {
+  color: rgb(77, 77, 151);
+}

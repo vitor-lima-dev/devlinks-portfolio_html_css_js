@@ -1,0 +1,33 @@
+:root {
+  --bg-page-gradient:
+    radial-gradient(ellipse 80% 80% at top right, #850071b6, transparent 75%),
+    radial-gradient(ellipse 80% 80% at bottom left, #850071b6, transparent 75%),
+    radial-gradient(circle at 0% 80%, #2335527c 0%, transparent 75%),
+    radial-gradient(circle at bottom right, #2335527c 0%, transparent 75%),
+    radial-gradient(circle 400px at top right, #233552, transparent 75%),
+    radial-gradient(circle 400px at bottom left, #233552, transparent 75%);
+  --main-page-font: "Google Sans", sans-serif;
+  --main-page-color: #ffffff;
+  --bg-page: #000000;
+  --bg-switch-color: rgba(255, 255, 255, 0.1);
+  --stroke-switch-color: rgba(255, 255, 255, 0.1);
+  --bg-switch-icon: url("../assets/icons/moon-stars.svg");
+  --bg-links-color: rgba(255, 255, 255, 0.1);
+  --stroke-links-color: #ffffff;
+  --bg-social-color: rgba(255, 255, 255, 0.1);
+  --stroke-social-color: rgba(255, 255, 255, 0.1);
+  --footer-text: white;
+}
+
+.light-theme {
+  --bg-page: white;
+  --main-page-color: #000000;
+    --bg-switch-color: rgba(255, 255, 255, 0.5);
+    --stroke-switch-color: rgba(255, 255, 255, 0.5);
+    --bg-switch-icon: url("../assets/icons/sun.svg");
+    --bg-links-color: rgba(255, 255, 255, 0.5);
+    --stroke-links-color: #313131;
+    --bg-social-color: rgba(255, 255, 255, 0.5);
+    --stroke-social-color: rgba(255, 255, 255, 0.5);
+    --footer-text: white;
+}
