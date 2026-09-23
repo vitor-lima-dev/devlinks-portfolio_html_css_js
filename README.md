@@ -1,4 +1,7 @@
-# 🔗 DevLinks — Vitor Lima Dev
+<h1 align="center">🔗 DevLinks 🔗</h1>
+<p align="center">Designed by Vitor Lima Dev</p>
+
+<br>
 
 <div align="center">
 
@@ -167,23 +170,6 @@ Este projeto faz parte da minha evolução no desenvolvimento web e foi utilizad
 - eventos em JavaScript;
 - Git e GitHub;
 - organização de projetos front-end.
-
----
-
-## 🔮 Próximos passos
-
-O projeto continuará evoluindo conforme novas funcionalidades forem desenvolvidas.
-
-Algumas possibilidades:
-
-- [ ] Adicionar projetos reais ao portfólio
-- [ ] Criar uma seção "Sobre mim"
-- [ ] Adicionar preview individual dos projetos
-- [ ] Melhorar acessibilidade
-- [ ] Adicionar estados de foco para navegação por teclado
-- [ ] Otimizar performance das animações
-- [ ] Expandir a versão mobile
-- [ ] Publicar novas versões conforme o projeto evolui
 
 ---
 
